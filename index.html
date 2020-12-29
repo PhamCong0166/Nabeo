@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Img comparision by mouseover </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 	<script type="text/javascript" src="vendor/bootstrap.js"></script> -->
+    <script type="text/javascript" src="1.js"></script>
+    <!-- 	<link rel="stylesheet" href="vendor/bootstrap.css"> -->
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="slider slider1"></div>
+        <div class="slider slider2"></div>
+
+    </div>
+</body>
+<script>
+	let slide= document.querySelector(".slider2")
+	window.onmousemove= function (e)
+	{
+		let x = e.clientX;
+		slide.style.left=x+"px"
+	}
+</script>
+</html>
